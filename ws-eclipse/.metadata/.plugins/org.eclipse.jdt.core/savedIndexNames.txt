@@ -1,5 +1,0 @@
-INDEX VERSION 1.134+C:\Users\luizh\OneDrive\Área de Trabalho\DEV\Estudo\JAVA\Udemy\ws-eclipse\.metadata\.plugins\org.eclipse.jdt.core
-3510846143.index
-1865797976.index
-3025376779.index
-2629503827.index
