@@ -1,0 +1,28 @@
+package exercicios_estrutura_sequencial;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class exercicio_05 {
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int codePeca1, codePeca2, numPeca1, numPeca2;
+		double valorPeca1, valorPeca2, totPeca1, totPeca2, total;
+		
+		codePeca1 = sc.nextInt();
+		numPeca1 = sc.nextInt();
+		valorPeca1 = sc.nextDouble();
+		
+		codePeca2 = sc.nextInt();
+		numPeca2 = sc.nextInt();
+		valorPeca2 = sc.nextDouble();
+		sc.close();
+		
+		totPeca1 = (double) numPeca1 * valorPeca1;
+		totPeca2 = (double) numPeca2 * valorPeca2;
+		total = totPeca1 + totPeca2;
+		
+		System.out.printf("VALOR A PAGAR: %.2f", total);
+	}
+}

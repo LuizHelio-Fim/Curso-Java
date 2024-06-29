@@ -1,0 +1,23 @@
+package exercicios_estrutura_sequencial;
+import java.util.Scanner;
+import java.util.Locale;
+
+
+public class exercicio_04 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
+		int ID, horasTrabalhadas;
+		double valorHora, salario;
+		
+		ID = sc.nextInt();
+		horasTrabalhadas = sc.nextInt();
+		valorHora = sc.nextDouble();
+		
+		salario = (double) valorHora * horasTrabalhadas;
+		
+		System.out.println("NUMBER: " + ID);
+		System.out.printf("Salary = U$ %.2f", salario);
+	}
+}

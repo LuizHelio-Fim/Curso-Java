@@ -1,0 +1,42 @@
+package exercicios_estrutura_condicional;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class exercicio_05 {
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		int code, qntd;
+		double preco;
+		
+		System.out.printf("Codigo        Lanche         Preço%n"
+				+ "1        Cachorro Quente     R$4.00%n"
+				+ "2        X-Salada            R$4.50%n"
+				+ "3        X-Bacon             R$5.00%n"
+				+ "4        Torrada Simples     R$2.00%n"
+				+ "5        Refrigerante        R$1.50%n%n");
+		
+		System.out.println("Selecione um codigo e a quantidade:");
+		code = sc.nextInt();
+		qntd = sc.nextInt();
+		
+		if (code == 1) {
+			preco = (double) qntd*4.00;
+		}
+		else if (code == 2) {
+			preco = (double) qntd*4.50;
+		}
+		else if (code == 3) {
+			preco = (double) qntd*5.00;
+		}
+		else if (code == 4) {
+			preco = (double) qntd*2.00;
+		}
+		else if (code == 5) {
+			preco = (double) qntd*1.50;
+		}
+		System.out.printf("Total: R$%.2f", preco);
+		sc.close();
+	}
+}
